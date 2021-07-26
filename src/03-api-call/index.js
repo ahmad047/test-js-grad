@@ -34,7 +34,6 @@ The expected output is:
 }
  */
 
-// Bringing in axios
 const axios = require('axios');
 
 // test for this api call is failing due to reason that the call is being made to
@@ -42,7 +41,7 @@ const axios = require('axios');
 // http://swapi.dev/api/people/1/ as I am not allowed to change the test suite so
 // I will leave that as a failing test. However the API call has been made as intended
 
-module.exports = async function fetchLukeSkywalker() {
+module.exports = fetchLukeSkywalker = async () => {
   return await axios
     .get('https://swapi.dev/api/people/1/')
     .then(res => res.data);

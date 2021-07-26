@@ -7,12 +7,12 @@
  *   - Not required, but major bonus points awarded
  */
 
-// Average and worst case time complexity (Big-O) of my function is: 
+// Average and worst case time complexity (Big-O) of my function is:
   // the worst and average case is going to be O(n^2)
-// Explain: 
+// Explain:
   // As explained below, I have used a bubble sort to comply with level 2.
 
-module.exports = function sortArray(arr) {
+module.exports = sortArray = arr => {
   _checkForType(arr); // as said below this was O(n)
 
   // I am using a simple bubble sort so the bubble sort is of time complexity O(n^2)
