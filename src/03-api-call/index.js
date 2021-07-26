@@ -34,6 +34,8 @@ The expected output is:
 }
  */
 
+const axios = require('axios');
+
 module.exports = async function fetchLukeSkywalker() {
-  // TODO
+    
 };
