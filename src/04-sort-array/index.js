@@ -11,6 +11,11 @@
 // Explain:
 
 module.exports = function sortArray(arr) {
+  if (!Array.isArray(arr)) {
+    console.log(arr)
+    throw new TypeError();
+  } 
+
   if (arr.length == 0) {
     return arr;
   } else {
