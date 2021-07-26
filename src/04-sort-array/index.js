@@ -11,7 +11,7 @@
 // Explain:
 
 module.exports = function sortArray(arr) {
-  _checkForType(arr)
+  _checkForType(arr);
 
   if (arr.length == 0) {
     return arr;
@@ -33,8 +33,14 @@ const _swap = (arr, jIndex) => {
   arr[jIndex + 1] = temp;
 };
 
-const _checkForType = (arr) => {
+const _checkForType = arr => {
   if (!Array.isArray(arr)) {
     throw new TypeError();
-  } 
-}
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      if (!Number.isInteger(arr[i])) {
+        throw new TypeError();
+      }
+    }
+  }
+};
