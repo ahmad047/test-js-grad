@@ -9,8 +9,8 @@
 
 module.exports = function reverseWordsInSentence(input) {
   const arr = input.split(' ').map(x => {
-    return x.split('').reverse();
+    return x.split('').reverse().join('');
   });
 
-  return arr
+  return arr.join(' ')
 };
