@@ -34,8 +34,11 @@ The expected output is:
 }
  */
 
+// Bringing in axios
 const axios = require('axios');
 
 module.exports = async function fetchLukeSkywalker() {
-    
+  return await axios
+    .get('https://swapi.dev/api/people/1/')
+    .then(res => res.data);
 };
