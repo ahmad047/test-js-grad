@@ -4,5 +4,7 @@
 // Explain:
 
 module.exports = function createBase(integer) {
-  // TODO
+  return functionForAddition = secondInteger => {
+    return secondInteger + integer;
+  };
 };
