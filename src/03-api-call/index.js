@@ -37,6 +37,11 @@ The expected output is:
 // Bringing in axios
 const axios = require('axios');
 
+// test for this api call is failing due to reason that the call is being made to
+// https://swapi.dev/api/people/1/ where the snapshot references a call to address
+// http://swapi.dev/api/people/1/ as I am not allowed to change the test suite so
+// I will leave that as a failing test. However the API call has been made as intended
+
 module.exports = async function fetchLukeSkywalker() {
   return await axios
     .get('https://swapi.dev/api/people/1/')
